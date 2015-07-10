@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGI-Tc-cjW">
-                                <rect key="frame" x="263" y="101" width="86" height="42"/>
+                                <rect key="frame" x="257" y="101" width="86" height="42"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="21"/>
                                 <state key="normal" title="Calculate">
                                     <color key="titleColor" red="0.98823535442352295" green="0.078431375324726105" blue="0.43921571969985962" alpha="1" colorSpace="deviceRGB"/>
@@ -31,10 +31,10 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="U8q-zH-IK1">
-                                <rect key="frame" x="6" y="63" width="572" height="31"/>
+                                <rect key="frame" x="14" y="63" width="572" height="31"/>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0XL-6N-deB">
-                                <rect key="frame" x="31" y="158" width="29" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0XL-6N-deB">
+                                <rect key="frame" x="257" y="158" width="86" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -43,15 +43,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="0XL-6N-deB" firstAttribute="centerX" secondItem="dGI-Tc-cjW" secondAttribute="centerX" id="2bc-Vr-eAV"/>
                             <constraint firstItem="0XL-6N-deB" firstAttribute="top" secondItem="dGI-Tc-cjW" secondAttribute="bottom" constant="15" id="8nU-fw-sCR"/>
                             <constraint firstItem="dGI-Tc-cjW" firstAttribute="top" secondItem="U8q-zH-IK1" secondAttribute="bottom" constant="8" id="ARU-xR-IYw"/>
-                            <constraint firstItem="0XL-6N-deB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="15" id="Osf-lh-VJS"/>
                             <constraint firstItem="z7f-d4-qlS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="UET-dm-WdI"/>
                             <constraint firstItem="z7f-d4-qlS" firstAttribute="width" secondItem="U8q-zH-IK1" secondAttribute="width" id="Vln-pI-6oS"/>
-                            <constraint firstItem="z7f-d4-qlS" firstAttribute="centerX" secondItem="U8q-zH-IK1" secondAttribute="centerX" constant="7.5" id="acT-nW-UFQ"/>
+                            <constraint firstItem="z7f-d4-qlS" firstAttribute="centerX" secondItem="U8q-zH-IK1" secondAttribute="centerX" id="acT-nW-UFQ"/>
                             <constraint firstItem="U8q-zH-IK1" firstAttribute="top" secondItem="z7f-d4-qlS" secondAttribute="bottom" constant="13" id="eA0-r4-sxb"/>
-                            <constraint firstItem="dGI-Tc-cjW" firstAttribute="centerX" secondItem="U8q-zH-IK1" secondAttribute="centerX" constant="13.5" id="gl2-3u-XUP"/>
+                            <constraint firstItem="dGI-Tc-cjW" firstAttribute="centerX" secondItem="U8q-zH-IK1" secondAttribute="centerX" id="gl2-3u-XUP"/>
                             <constraint firstItem="z7f-d4-qlS" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="lAx-aX-gJC"/>
+                            <constraint firstItem="dGI-Tc-cjW" firstAttribute="width" secondItem="0XL-6N-deB" secondAttribute="width" id="pTX-LX-9w7"/>
                             <constraint firstItem="z7f-d4-qlS" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="pv0-Gp-8iz"/>
                         </constraints>
                         <connections>
