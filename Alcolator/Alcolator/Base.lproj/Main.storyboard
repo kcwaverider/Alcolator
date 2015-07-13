@@ -32,6 +32,10 @@
                             </textField>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="U8q-zH-IK1">
                                 <rect key="frame" x="14" y="63" width="572" height="31"/>
+                                <connections>
+                                    <action selector="sliderValueChange:" destination="vXZ-lx-hvc" eventType="valueChanged" id="5G3-9p-kne"/>
+                                    <action selector="testTEST:" destination="vXZ-lx-hvc" eventType="touchDragExit" id="lD5-Ax-lkr"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0XL-6N-deB">
                                 <rect key="frame" x="257" y="158" width="86" height="20.5"/>
@@ -59,9 +63,18 @@
                             <outletCollection property="gestureRecognizers" destination="A18-eJ-yIz" appends="YES" id="2Xl-gF-pA9"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="beerCountSlider" destination="U8q-zH-IK1" id="ObP-xn-ieY"/>
+                        <outlet property="beerPercentText" destination="z7f-d4-qlS" id="Fpk-hO-Qoj"/>
+                        <outlet property="resultLabel" destination="0XL-6N-deB" id="Evg-tn-f8v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="A18-eJ-yIz"/>
+                <tapGestureRecognizer id="A18-eJ-yIz">
+                    <connections>
+                        <action selector="tapGestureDidFire:" destination="vXZ-lx-hvc" id="EWZ-h8-Tou"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>
