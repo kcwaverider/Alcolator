@@ -15,6 +15,7 @@
 		88D57C1A1B4F53220034DEBC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88D57C191B4F53220034DEBC /* Images.xcassets */; };
 		88D57C1D1B4F53220034DEBC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D57C1B1B4F53220034DEBC /* LaunchScreen.xib */; };
 		88D57C291B4F53230034DEBC /* AlcolatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D57C281B4F53230034DEBC /* AlcolatorTests.m */; };
+		88D7D18C1B55F819007C1790 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D7D18B1B55F819007C1790 /* MainMenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		88D57C221B4F53230034DEBC /* AlcolatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlcolatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88D57C271B4F53230034DEBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88D57C281B4F53230034DEBC /* AlcolatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlcolatorTests.m; sourceTree = "<group>"; };
+		88D7D18A1B55F819007C1790 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		88D7D18B1B55F819007C1790 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				88D57C0C1B4F53220034DEBC /* Supporting Files */,
 				8891859B1B537E1300BC742C /* WhiskeyViewController.h */,
 				8891859C1B537E1300BC742C /* WhiskeyViewController.m */,
+				88D7D18A1B55F819007C1790 /* MainMenuViewController.h */,
+				88D7D18B1B55F819007C1790 /* MainMenuViewController.m */,
 			);
 			path = Alcolator;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 				8891859D1B537E1300BC742C /* WhiskeyViewController.m in Sources */,
 				88D57C121B4F53220034DEBC /* AppDelegate.m in Sources */,
 				88D57C0F1B4F53220034DEBC /* main.m in Sources */,
+				88D7D18C1B55F819007C1790 /* MainMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
