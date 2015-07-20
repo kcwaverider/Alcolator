@@ -44,18 +44,7 @@
     NSLog(@"Slider value changed to %d", (int)self.beerCountSlider.value);
     // NSLog(@"%f", self.beerCountSlider.value);
     [self.beerPercentTextField resignFirstResponder];
-    float numberOfWhiskeyGlassesForEquivalentAlcoholAmount = [self whiskeyEquivalent:self.beerCountSlider.value];
-    
-    NSString *whiskeyText;
-    
-    if (numberOfWhiskeyGlassesForEquivalentAlcoholAmount == 1) {
-        whiskeyText = NSLocalizedString(@"shot", @"singular shot");
-    } else {
-        whiskeyText = NSLocalizedString(@"shots", @"plural of shot");
-    }
-
-    
-    self.navigationItem.title = [NSString stringWithFormat: @"Whiskey (%.1f %@)", numberOfWhiskeyGlassesForEquivalentAlcoholAmount, whiskeyText];
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) sender.value]];
 }
 
 
