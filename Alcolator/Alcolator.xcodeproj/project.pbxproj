@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		8891859D1B537E1300BC742C /* WhiskeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8891859C1B537E1300BC742C /* WhiskeyViewController.m */; };
+		88A1E0371B5DB2B000A604E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88A1E0361B5DB2B000A604E2 /* Images.xcassets */; };
 		88D57C0F1B4F53220034DEBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D57C0E1B4F53220034DEBC /* main.m */; };
 		88D57C121B4F53220034DEBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D57C111B4F53220034DEBC /* AppDelegate.m */; };
 		88D57C151B4F53220034DEBC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D57C141B4F53220034DEBC /* ViewController.m */; };
 		88D57C181B4F53220034DEBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D57C161B4F53220034DEBC /* Main.storyboard */; };
-		88D57C1A1B4F53220034DEBC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88D57C191B4F53220034DEBC /* Images.xcassets */; };
 		88D57C1D1B4F53220034DEBC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D57C1B1B4F53220034DEBC /* LaunchScreen.xib */; };
 		88D57C291B4F53230034DEBC /* AlcolatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D57C281B4F53230034DEBC /* AlcolatorTests.m */; };
 		88D7D18C1B55F819007C1790 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D7D18B1B55F819007C1790 /* MainMenuViewController.m */; };
@@ -31,6 +31,7 @@
 /* Begin PBXFileReference section */
 		8891859B1B537E1300BC742C /* WhiskeyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiskeyViewController.h; sourceTree = "<group>"; };
 		8891859C1B537E1300BC742C /* WhiskeyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiskeyViewController.m; sourceTree = "<group>"; };
+		88A1E0361B5DB2B000A604E2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		88D57C091B4F53220034DEBC /* Alcolator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alcolator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88D57C0D1B4F53220034DEBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88D57C0E1B4F53220034DEBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -39,7 +40,6 @@
 		88D57C131B4F53220034DEBC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		88D57C141B4F53220034DEBC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		88D57C171B4F53220034DEBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		88D57C191B4F53220034DEBC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		88D57C1C1B4F53220034DEBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		88D57C221B4F53230034DEBC /* AlcolatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlcolatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88D57C271B4F53230034DEBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,8 +92,8 @@
 				88D57C131B4F53220034DEBC /* ViewController.h */,
 				88D57C141B4F53220034DEBC /* ViewController.m */,
 				88D57C161B4F53220034DEBC /* Main.storyboard */,
-				88D57C191B4F53220034DEBC /* Images.xcassets */,
 				88D57C1B1B4F53220034DEBC /* LaunchScreen.xib */,
+				88A1E0361B5DB2B000A604E2 /* Images.xcassets */,
 				88D57C0C1B4F53220034DEBC /* Supporting Files */,
 				8891859B1B537E1300BC742C /* WhiskeyViewController.h */,
 				8891859C1B537E1300BC742C /* WhiskeyViewController.m */,
@@ -209,9 +209,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88A1E0371B5DB2B000A604E2 /* Images.xcassets in Resources */,
 				88D57C181B4F53220034DEBC /* Main.storyboard in Resources */,
 				88D57C1D1B4F53220034DEBC /* LaunchScreen.xib in Resources */,
-				88D57C1A1B4F53220034DEBC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
