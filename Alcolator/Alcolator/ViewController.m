@@ -55,7 +55,9 @@
         wineText = NSLocalizedString(@"glasses", @"plural of glass");
     }
     
+
     [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", numberOfWineGlassesInteger]];
+
 }
 
 - (IBAction)buttonPressed:(id)sender {

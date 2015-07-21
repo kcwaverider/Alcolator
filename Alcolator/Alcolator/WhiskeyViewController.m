@@ -55,6 +55,7 @@
     
     [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", whiskeyShotInteger]];
                                                      
+
 }
 
 

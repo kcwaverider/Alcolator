@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D2134" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
-=======
+
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D2134" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="09q-AT-3uz">
->>>>>>> tabbed-navigation
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-<<<<<<< HEAD
-=======
         <!--Tab Bar Controller-->
         <scene sceneID="n06-uj-Hmv">
             <objects>
@@ -31,7 +26,6 @@
             </objects>
             <point key="canvasLocation" x="-114" y="-481"/>
         </scene>
->>>>>>> tabbed-navigation
         <!--Wine-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -174,11 +168,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gue-zp-W3L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
-            <point key="canvasLocation" x="-436" y="239"/>
-=======
+
             <point key="canvasLocation" x="326" y="313"/>
->>>>>>> tabbed-navigation
+
         </scene>
     </scenes>
     <resources>
