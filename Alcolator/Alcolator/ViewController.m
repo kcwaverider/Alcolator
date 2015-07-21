@@ -21,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", 0]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,7 +55,7 @@
         wineText = NSLocalizedString(@"glasses", @"plural of glass");
     }
     
-    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) numberOfWineGlassesForEquivalentAlcoholAmount]];
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", numberOfWineGlassesInteger]];
 }
 
 - (IBAction)buttonPressed:(id)sender {

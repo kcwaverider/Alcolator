@@ -44,7 +44,17 @@
     NSLog(@"Slider value changed to %d", (int)self.beerCountSlider.value);
     // NSLog(@"%f", self.beerCountSlider.value);
     [self.beerPercentTextField resignFirstResponder];
-    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) sender.value]];
+    float numberOfShotsForEquivalentAlcoholAmount = [self whiskeyEquivalent:self.beerCountSlider.value];
+    
+    int whiskeyShotInteger;
+    if (numberOfShotsForEquivalentAlcoholAmount - (int) numberOfShotsForEquivalentAlcoholAmount < .5) {
+        whiskeyShotInteger = numberOfShotsForEquivalentAlcoholAmount;
+    } else {
+        whiskeyShotInteger = ceilf(numberOfShotsForEquivalentAlcoholAmount);
+    }
+    
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", whiskeyShotInteger]];
+                                                     
 }
 
 
