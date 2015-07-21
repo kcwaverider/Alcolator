@@ -21,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", 0]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,7 +42,12 @@
    // NSLog(@"%f", self.beerCountSlider.value);
     [self.beerPercentTextField resignFirstResponder];
     float numberOfWineGlassesForEquivalentAlcoholAmount = [self numberOfWineGlassesEquivalent:self.beerCountSlider.value];
-    
+    int numberOfWineGlassesInteger;
+    if (numberOfWineGlassesForEquivalentAlcoholAmount - (int) numberOfWineGlassesForEquivalentAlcoholAmount < .5) {
+        numberOfWineGlassesInteger = numberOfWineGlassesForEquivalentAlcoholAmount;
+    } else {
+        numberOfWineGlassesInteger = ceilf(numberOfWineGlassesForEquivalentAlcoholAmount);
+    }
     NSString *wineText;
     if(numberOfWineGlassesForEquivalentAlcoholAmount == 1) {
         wineText = NSLocalizedString(@"glass", @"singular glass");
@@ -49,7 +55,7 @@
         wineText = NSLocalizedString(@"glasses", @"plural of glass");
     }
     
-    self.navigationItem.title = [NSString stringWithFormat: @"Wine (%.1f %@)", numberOfWineGlassesForEquivalentAlcoholAmount, wineText];
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", numberOfWineGlassesInteger]];
 }
 
 - (IBAction)buttonPressed:(id)sender {
